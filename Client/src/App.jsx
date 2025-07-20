@@ -3,13 +3,13 @@ import { Navbar } from "./components/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { AppContextProvider, useAppContext } from "./context/AppContext";
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Login from "./components/Login";
 import AllProducts from "./pages/AllProducts";
 import ProudctCategory from "./pages/ProudctCategory";
 import ProductDetails from "./pages/ProductDetails";
-import Cart from "./pages/cart";
+import Cart from "./pages/Cart";
 
 function AppContent() {
   const isSellerPath = useLocation().pathname.includes("seller");
